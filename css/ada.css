@@ -1,0 +1,59 @@
+/**
+ * WPPRO ADA - Main CSS File
+ * Version: 1.0.0
+ */
+
+/* Skip Links */
+
+.wppro-ada-skip-link {
+    position: absolute !important;
+    left: -9999px !important;
+    top: 0 !important;
+    z-index: 999 !important;
+}
+
+
+.wppro-ada-skip-link:focus {
+    left: 0 !important;
+    top: 0 !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    padding: 10px !important;
+    text-decoration: none !important;
+}
+
+/* Focus Styles for Accessibility */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #4A90E2 !important;
+    outline-offset: 2px !important;
+}
+
+/* Enhanced Keyboard Navigation */
+
+.wppro-ada-keyboard-nav:focus {
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.5) !important;
+}
+
+/* High Contrast Mode Support */
+
+@media (prefers-contrast: more) {
+    body {
+        color: #000 !important;
+        background-color: #fff !important;
+    }
+}
+
+/* Reduced Motion Support */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

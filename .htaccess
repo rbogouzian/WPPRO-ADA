@@ -1,0 +1,11 @@
+# WPPRO ADA Plugin - Prevent Direct Access
+<FilesMatch "\.(php|js|css|txt|md)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow access to ada.js and ada.css through WordPress
+<FilesMatch "^(ada\.js|ada\.css)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
